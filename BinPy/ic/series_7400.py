@@ -3869,6 +3869,7 @@ class IC_74181(Base_24pin):
                             temp[6]).output()).output()
 
         if self.pins[12] == 0 and self.pins[24] == 1:
+            self.set_IC(output)
             return output
         else:
             print("Ground and VCC pins have not been configured correctly.")
